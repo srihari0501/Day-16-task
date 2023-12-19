@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="countdown">Countdown will appear here</div>
+  <img id="independenceDayImage"
+    src="https://cdn.dribbble.com/users/19610/screenshots/6992916/media/b2a1e812ddc1edaa28d5ea77438f00fe.jpg?resize=450x338&vertical=center"
+    alt="Happy Independence Day Image">
+  <script>
+    setTimeout(function () {
+      document.getElementById('countdown').innerText = '10';
+      setTimeout(function () {
+        document.getElementById('countdown').innerText = '9';
+        setTimeout(function () {
+          document.getElementById('countdown').innerText = '8';
+          setTimeout(function () {
+            document.getElementById('countdown').innerText = '7';
+            setTimeout(function () {
+              document.getElementById('countdown').innerText = '6';
+              setTimeout(function () {
+                document.getElementById('countdown').innerText = '5';
+                setTimeout(function () {
+                  document.getElementById('countdown').innerText = '4';
+                  setTimeout(function () {
+                    document.getElementById('countdown').innerText = '3';
+                    setTimeout(function () {
+                      document.getElementById('countdown').innerText = '2';
+                      setTimeout(function () {
+                        document.getElementById('countdown').innerText = '1';
+                        setTimeout(function () {
+                          document.getElementById('countdown').style.display = 'none';
+                          document.getElementById('independenceDayImage').style.display = 'block';
+                        }, 1000);
+                      }, 1000);
+                    }, 1000);
+                  }, 1000);
+                }, 1000);
+              }, 1000);
+            }, 1000);
+          }, 1000);
+        }, 1000);
+      }, 1000);
+    }, 1000);
+  </script>
+
+</body>
+
+</html>
